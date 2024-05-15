@@ -6,7 +6,7 @@ import br.com.alura.loja.orcamento.RegistroDeOrcamento;
 
 import java.math.BigDecimal;
 
-public class AdapterTest {
+public class TestesDecorator {
 
     public static void main(String[] args) {
         Orcamento orcamento = new Orcamento(BigDecimal.TEN, 1);
