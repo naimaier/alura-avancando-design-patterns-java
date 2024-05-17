@@ -50,8 +50,14 @@ public class Orcamento implements Orcavel {
 		this.situacao.finalizar(this);
 	}
 
+	//Simulando uma demora como se tivesse consultando uma API
 	public BigDecimal getValor() {
-		return valor;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return valor;
 	}
 
 	public int getQuantidadeItens() {
